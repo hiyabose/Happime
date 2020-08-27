@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+           <link rel ="stylesheet" type = "text/css"  href ="index.css">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+body {
+  margin:0px;
+  font-family:'Roboto';
+  text-align:center;
+}
+
+
+
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:#ff790a;
+    width: 100%;
+ 
+     
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 60px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+.w{
+padding:30px;
+}
+.w h1{
+color:#ff790a;
+}
+#container {
+  color:#999;
+  text-transform: uppercase;
+  font-size:25px;
+  font-weight:bold;
+  padding-top:20px;  
+  width:100%;
+  bottom:45%;
+  display:block;
+}
+
+#flip {
+  height:50px;
+  overflow:hidden;
+}
+
+#flip > div > div {
+  color:#fff;
+  padding:4px 12px;
+  height:45px;
+  margin-bottom:45px;
+  display:inline-block;
+}
+
+#flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+#flip div div {
+  background:#abff00;
+}
+#flip div:first-child div {
+  background:#00eaff;
+}
+#flip div:last-child div {
+  background:#ff0033;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-270px;}
+}
+
+p {
+  position:fixed;
+  width:100%;
+  bottom:30px;
+  font-size:12px;
+  color:#999;
+  margin-top:200px;
+  font-family:monospace
+}
+
+.main{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.photo{
+margin-top:50px;
+}
+img{
+  width:150px;
+  border-radius:50%;
+  border:1.5px solid #ff790a66;
+  padding:10px;
+}
+
+.photo1 img{
+  width:0px;
+   border:0px;
+}
+
+.ok{
+  padding:15px 30px;
+  border-radius:10px;
+  border:transparent;
+  margin-top:18px;
+  color:white;
+  background:#ff790a;
+  font-size:15px;
+  font-family:monospace;
+}
+
+
+@media only screen and (min-width: 700px) and{max-width:890px}
+{
+.logo{
+  margin-left:50px;
+}
+.x {
+  margin-left:90px;
+}
+img{
+  width:250px;
+}
+
+#container{
+  font-size:40px;
+}
+.ok{
+  margin-top:40px;
+  padding:20px 40px;
+  font-size:20px;
+}
+}
+
+@media only screen and (min-width: 900px) 
+{
+  .main{
+    flex-direction:row;
+   
+  }
+  .logo{
+  margin-left:80px;
+}
+.other{
+  margin-left:700px;
+}
+.x {
+  margin-left:90px;
+}
+img{
+  width:300px ;
+  margin-left:50px;
+  margin-top:0px;
+  border-radius:0%;
+  border:1.5px solid #ff790a66;
+  padding:10px;
+}
+.w{
+padding:0 200px;
+}
+#container{
+  font-size:40px;
+  margin-top:0px;
+  margin-left: 0px
+}
+.ok{
+  margin-top:60px;
+  margin-left:0px;
+  padding:20px 40px;
+  font-size:20px;
+}
+
+.photo1 img{
+width:300px;
+ margin-right:50px;
+  margin-top:50px;
+  border-radius:0%;
+  border:1.5px solid #ff790a66;
+  padding:10px;
+}
+
+}
+</style>
+
+         </head>
+<body>
+<div class="heads">
+<div class ="logo">
+<a href ="\" style="text-decoration:none;">
+<h3>HAPPIME</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="\" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="\" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="\" style="text-decoration:none;">
+Contact </a>
+</div>
+</div>
+</div>
+
+{%if data == 1%}
+<div class="w">
+<div id=container>
+  
+<h1>RESULTS</h1>
+YOU ARE AT HIGH RISK OF HAVING SERIOUS MENTAL HEALTH ISSUES !
+<br><br>
+  Always Be
+  <div id=flip>
+    <div><div>Smile</div></div>
+    <div><div>Happy</div></div>
+    <div><div>Healthy</div></div>
+  </div>
+  In Life
+<div clas="test">
+<a href ="/">
+<button class="ok">Back</button>
+</a>
+</div>
+</div>
+</div>
+  {%else%}
+<div class="w">
+<div id=container>
+  
+<h1>RESULTS</h1>
+YOU ARE ENJOYING YOUR LIFE.STAY THE WAY YOU ARE :))
+<br><br>
+  Always Be
+  <div id=flip>
+    <div><div>Smile</div></div>
+    <div><div>Happy</div></div>
+    <div><div>Healthy</div></div>
+  </div>
+  In Life
+<div clas="test">
+<a href ="/">
+<button class="ok">Back</button>
+</a>
+</div>
+</div>
+</div>
+  {%endif%}
+<p>by Dikshita Basu</p>

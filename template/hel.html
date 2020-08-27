@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title></title>
+            <link href ="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+           <link rel ="stylesheet" type = "text/css"  href ="test.css">
+             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+.heads{
+    flex-direction : row;
+    display: flex;
+    height: 75px;
+    background:transparent;
+    width: 100%;
+ 
+     
+}
+
+.logo{
+    font-size: 20px;
+    font-family:monospace;
+    color:#6e6b74;
+    margin-left: 20px;
+    margin-top:25px;
+
+}
+.other{
+    flex-direction : row;
+    display: flex;
+    margin-left: 40px;
+    margin-top: 30px;
+    color:#ddd8d8;
+    font-family:monospace
+}
+
+.logo h3{
+ color:#f5fefbf7;
+}
+.x a{
+  color:#f5fefbf7;
+  margin-left:30px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Exo', sans-serif;
+}
+
+.ok{
+    background:#75717a3b;
+    width:200px;
+    padding:50px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:#e2e1e5;
+}
+
+.area{
+    backgroun: #c73a64;  
+    background:linear-gradient(to left, #d10924, #c12290);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+
+input{
+    width:70%;
+    border-radius:10px;
+    padding:6px 30px;
+    background:transparent;
+    border:1px solid #312f2f66;
+    margin-top:10px;
+    text-transform:uppercase;
+}
+
+input[type=submit]{
+    background:#f7f6fd;
+    margin-left:0px;
+    padding:10px;
+}
+input[type=text]{
+    color:#f1ebebf5;
+}
+
+
+@media only screen and (min-width: 699px) and{max-width:890px}
+{
+.logo{
+  margin-left:50px;
+}
+.x {
+  margin-left:90px;
+}
+img{
+  width:250px;
+}
+
+
+}
+
+@media only screen and (min-width: 900px) 
+{
+  .main{
+    flex-direction:row;
+   
+  }
+  .logo{
+  margin-left:80px;
+}
+.other{
+  margin-left:700px;
+}
+.x {
+  margin-left:90px;
+}
+
+.ok{
+    background:#75717a3b;
+    width:600px;
+    padding:50px;
+    margin-left:0px;
+    margin-top:20px;
+    border-radius:30px;
+    color:#b4b3b7;
+
+}
+
+
+
+}
+</style>
+
+         </head>
+<body>
+<div class="area" align="center">
+<div class="heads">
+<div class ="logo">
+<a href ="\" style="text-decoration:none;">
+<h3>HAPPIME</h3></a>
+</div>
+<div class = "other">
+<div class="x" >
+<a href ="\" style="text-decoration:none;">
+About</a>
+</div>
+<div class="x">
+<a href ="\" style="text-decoration:none;">
+Test</a>
+</div>
+<div class="x">
+<a href ="\" style="text-decoration:none;">
+Contact </a>
+</div>
+</div>
+</div>
+  
+<div class="mains">
+<div class="photo">
+
+</div>
+    
+
+<div class="ok" align="center">
+ <form method="POST", action="{{url_for('home')}}">
+           <b> 
+Age: 
+<br> <input type="text", name='a', placeholder="enter 1"> <br><br>
+
+Body Issue: (yes:1,No:0)
+<br> <input type="text", name='b', placeholder="enter 2"> <br><br>
+
+low esteem: (yes:1,No:0)
+<br> <input type="text", name='c', placeholder="enter 3"> <br><br>
+
+Are you happy? : (yes:0,No:1) 
+<br><input type="text", name='d', placeholder="enter 4"> <br><br>
+
+Feel anxious/depressed: (yes:1,No:0)
+<br> <input type="text", name='e', placeholder="enter 5"> <br><br>
+
+
+
+           <input type="submit" , value='Result!' >
+        </form>
+
+</div>
+</div>
+
+ </div >
+</body>
+</html>
